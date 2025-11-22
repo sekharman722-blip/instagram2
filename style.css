@@ -1,0 +1,169 @@
+/* ===== Signup / Login Page ===== */
+.signup-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fafafa;
+}
+
+.login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box .eye {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #0095f6;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ===== Home / Navbar ===== */
+.home-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.profile-box {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.profile-box img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.stories-bar {
+    display: flex;
+    overflow-x: auto;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.stories-bar div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.feed .post {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.reels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* ===== Story Popup ===== */
+.story-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.story-popup img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.story-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #fff;
+    width: 0%;
+    transition: width 0.1s;
+}
+
+/* ===== Notification ===== */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}

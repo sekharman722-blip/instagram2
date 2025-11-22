@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | InstaClone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="home-body">
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#" onclick="showHome()">🏠 Home</a>
+        <a href="#" onclick="showStories()">📸 Stories</a>
+        <a href="#" onclick="showReels()">🎬 Reels</a>
+        <a href="#" onclick="showDM()">💬 Messages</a>
+        <a href="#" onclick="showProfile()">👤 Profile</a>
+        <a href="index.html">🚪 Logout</a>
+    </div>
+
+    <!-- Profile Box -->
+    <div class="profile-box">
+        <img src="https://i.pravatar.cc/150?img=3" class="profile-pic">
+        <h2 id="userName">Your Name</h2>
+        <p>Welcome to InstaClone</p>
+    </div>
+
+    <!-- Home / Feed Section -->
+    <div id="home-section">
+        <div class="stories-bar" id="stories-bar"></div>
+        <div class="feed" id="feed"></div>
+    </div>
+
+    <!-- Reels Section -->
+    <div id="reels-section" class="hidden">
+        <div class="reels-container" id="reels"></div>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="profile-section" class="hidden">
+        <h2 style="text-align:center;">Profile Page</h2>
+        <p style="text-align:center;">This is a profile mockup.</p>
+    </div>
+
+    <!-- DM Section -->
+    <div id="dm-section" class="hidden">
+        <h2 style="text-align:center;">Direct Messages</h2>
+        <p style="text-align:center;">This is a DM mockup.</p>
+    </div>
+
+    <!-- Story Popup -->
+    <div class="story-popup" id="story-popup">
+        <div class="story-progress" id="story-progress"></div>
+        <img id="story-img" src="">
+    </div>
+
+    <!-- Notification Popup -->
+    <div id="notification" class="notification hidden"></div>
+</body>
+
+</html>
